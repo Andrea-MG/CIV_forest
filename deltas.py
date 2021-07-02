@@ -79,7 +79,7 @@ mean_flux_transmission = np.mean(all_trans,axis=0)
 
 # COMPUTATION OF DELTAS
 
-delta = (specobj.flux['brz'])/(mean_flux_transmission-1.)
+delta = (specobj.flux['brz'])/(mean_flux_transmission)-1.
 plt.figure(figsize=(20,10))
 plt.plot(delta, color="red", label="x100", alpha=0.7)
 plt.show()
